@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Document</title>
+
+    <script>
+        function add() {
+            let x = Number(prompt("Enter first number"));
+            let y = Number(prompt("Enter second number"));
+            let z = x + y;
+            alert("Addition of " + x + " and " + y + " = " + z);
+        }
+        function sub() {
+            let x = prompt("Enter first number");
+            let y = prompt("Enter second number");
+            let z = x - y;
+            alert("Subtraction of " + x + " and " + y + " = " + z);
+        }
+        function mul() {
+            let x = prompt("Enter first number");
+            let y = prompt("Enter second number");
+            let z = x * y;
+            alert("Multiplication of " + x + " and " + y + " = " + z);
+        }
+        function div() {
+            let x = prompt("Enter first number");
+            let y = prompt("Enter second number");
+            let z = x / y;
+            alert("Division of " + x + " and " + y + " = " + z);
+        }
+    </script>
+
+</head>
+
+<body style="background-color: cadetblue;">
+    <div class="container p-5 mt-5 card" style="width: 22rem;">
+        <h1 class="text-center">Do some Calculation ..!</h1>
+        <div class="d-grid p-5 gap-2 mx-auto">
+            <input id="i1" class="btn btn-primary" type="button" value="ADDITION" onclick="add();">
+            <input id="i2" class="btn btn-danger" type="button" value="SUBTRACTION" onclick="sub();">
+            <input id="i3" class="btn btn-success" type="button" value="MULTIPLICATION" onclick="mul();">
+            <input id="i4" class="btn btn-secondary" type="button" value="DIVISION" onclick="div();">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
